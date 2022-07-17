@@ -48,3 +48,35 @@
 .jumbotron-width {
   width: 60vh;
 }
+
+.default-layout {
+  display: grid;
+  grid-template-rows: 80px auto 3rem;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  min-height: 77vh;
+  min-width: 77vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  grid-area: footer;
+  padding: 5rem;
+  font-family: verdana;
+  font-size: 80%;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
