@@ -7,6 +7,7 @@ import { MyTicketsPage } from "./pages/my-tickets/MyTicketsPage";
 import { CreateTicketPage } from "./pages/create-ticket/CreateTicketPage";
 import { PrivateRoute } from "./components/private-route/PrivateRoute";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { TicketLandingPage } from "./pages/ticket-landing/TicketLandingPage";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/create-ticket">
             <CreateTicketPage />
+          </PrivateRoute>
+          <PrivateRoute path="/ticket/:ticketId">
+            <TicketLandingPage />
           </PrivateRoute>
         </Switch>
       </Router>
