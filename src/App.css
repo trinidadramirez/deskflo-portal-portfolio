@@ -46,7 +46,7 @@
 }
 
 .jumbotron-width {
-  width: 60vh;
+  max-width: 450px;
 }
 
 .default-layout {

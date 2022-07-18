@@ -71,7 +71,7 @@ export const LoginForm = () => {
       <Row>
         <Col>
           <img src={logo} width="50%" alt="DeskFlo Logo" />
-          <h1 className="text-secondary fs-3">Customer Portal Login</h1>
+          <h1 id="customerLabel" className="text-secondary fs-3">Customer Portal Login</h1>
           <Form autoComplete="off" onSubmit={handleOnSubmit}>
             <Form.Group>
               <div className="text-start">
