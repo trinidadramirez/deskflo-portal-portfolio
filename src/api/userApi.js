@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const loginUrl = "http://localhost:3001/v1/user/login";
-const userAccountUrl = "http://localhost:3001/v1/user";
-const userLogoutUrl = "http://localhost:3001/v1/user/logout";
-const newAccessTokenUrl = "http://localhost:3001/v1/token";
+const loginUrl = "http://localhost:3001/user/login-portal";
+const userAccountUrl = "http://localhost:3001/user";
+const userLogoutUrl = "http://localhost:3001/user/logout";
+const newAccessTokenUrl = "http://localhost:3001/token";
 
 export const userLogin = (formData) => {
   return new Promise(async (resolve, reject) => {

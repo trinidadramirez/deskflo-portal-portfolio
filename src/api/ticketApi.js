@@ -1,13 +1,13 @@
 import axios from "axios";
-const getSpecificTicketUrl = "http://localhost:3001/v1/ticket/";
-const resolveTicketUrl = "http://localhost:3001/v1/ticket/resolve-ticket/";
-const cancelTicketUrl = "http://localhost:3001/v1/ticket/cancel-ticket/";
-const reopenTicketUrl = "http://localhost:3001/v1/ticket/reopen-ticket/";
+const getSpecificTicketUrl = "http://localhost:3001/ticket/";
+const resolveTicketUrl = "http://localhost:3001/ticket/resolve-ticket/";
+const cancelTicketUrl = "http://localhost:3001/ticket/cancel-ticket/";
+const reopenTicketUrl = "http://localhost:3001/ticket/reopen-ticket/";
 
 export const getTickets = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const result = await axios.get("http://localhost:3001/v1/ticket", {
+      const result = await axios.get("http://localhost:3001/ticket", {
         headers: {
           Authorization: sessionStorage.getItem("accessToken"),
         },
