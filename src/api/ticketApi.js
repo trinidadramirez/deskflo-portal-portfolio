@@ -1,13 +1,13 @@
 import axios from "axios";
-const getSpecificTicketUrl = "https://deskflo-portal.herokuapp.com/ticket/";
-const resolveTicketUrl = "https://deskflo-portal.herokuapp.com/ticket/resolve-ticket/";
-const cancelTicketUrl = "https://deskflo-portal.herokuapp.com/ticket/cancel-ticket/";
-const reopenTicketUrl = "https://deskflo-portal.herokuapp.com/ticket/reopen-ticket/";
+const getSpecificTicketUrl = "http://localhost:3001/ticket/";
+const resolveTicketUrl = "http://localhost:3001/ticket/resolve-ticket/";
+const cancelTicketUrl = "http://localhost:3001/ticket/cancel-ticket/";
+const reopenTicketUrl = "http://localhost:3001/ticket/reopen-ticket/";
 
 export const getTickets = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const result = await axios.get("https://deskflo-portal.herokuapp.com/ticket", {
+      const result = await axios.get("http://localhost:3001/ticket", {
         headers: {
           Authorization: sessionStorage.getItem("accessToken"),
         },
