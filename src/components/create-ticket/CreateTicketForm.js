@@ -44,12 +44,12 @@ export const CreateTicketForm = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
     dispatch(
       createNewTicket({
         ...formData,
+        requestor: name,
         sender: name,
-        message: "Enter new messages here",
+        message: "Enter new messages below ⬇️",
       })
     );
   };
@@ -68,9 +68,9 @@ export const CreateTicketForm = () => {
           </div>
           <Form.Control
             name="requestor"
-            value={formData.requestor}
+            value={name}
             onChange={handleOnChange}
-            required
+            readonly
           />
         </Form.Group>
 
