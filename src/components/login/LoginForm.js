@@ -90,7 +90,7 @@ export const LoginForm = () => {
               />
             </Form.Group>
             <Form.Group>
-              <div className="text-start">
+              <div className="text-start mt-2">
                 <Form.Label className="text-secondary">Password</Form.Label>
               </div>
 
@@ -102,7 +102,7 @@ export const LoginForm = () => {
                 required
               />
             </Form.Group>
-            <Button className="mt-2" type="submit">
+            <Button className="mt-3" type="submit">
               Log In
             </Button>
           </Form>
